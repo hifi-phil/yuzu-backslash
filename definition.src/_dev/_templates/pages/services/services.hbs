@@ -1,0 +1,19 @@
+<div class="services{{#each _modifiers}} services--{{this}}{{/each}}">
+
+    {{#if heading}}
+        <div class="services__heading">
+            {{heading}}
+        </div>
+    {{/if}}
+    {{#if subheading}}
+        <div class="services__subheading">
+            {{subheading}}
+        </div>
+    {{/if}}
+
+    
+
+     {{#if content}}
+        {{> parRowBuilder content }}
+    {{/if}}
+</div>

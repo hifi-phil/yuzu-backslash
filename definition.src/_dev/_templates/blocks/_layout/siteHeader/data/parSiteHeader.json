@@ -1,0 +1,22 @@
+{
+    "menu": [
+        {
+            "label": "",
+            "href": "#",
+            "title": "",
+            "isNewTab": false,
+            "isExternalLink": false,
+            "iconName": "",
+            "isActive": false
+        }
+    ],
+    "cta": {
+        "label": "",
+        "href": "#",
+        "title": "",
+        "isNewTab": false,
+        "isExternalLink": false,
+        "iconName": "",
+        "isActive": false
+    }
+}

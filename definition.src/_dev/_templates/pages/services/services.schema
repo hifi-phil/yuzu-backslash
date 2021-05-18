@@ -1,0 +1,19 @@
+{
+    "id": "/services",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "",
+    "type": "object",
+    "properties": {
+        "heading": {
+            "type": "string"
+        },
+        "subheading": {
+            "type": "string"
+        },
+        "content": {
+            "$ref": "/dataRows",
+            "anyOfType": "parRowBuilder"
+        }
+    },
+    "additionalProperties": false
+}

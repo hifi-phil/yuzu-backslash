@@ -1,0 +1,31 @@
+<div class="testimonials{{#each _modifiers}} testimonials--{{this}}{{/each}}">
+
+    {{#if title}}
+        <div class="testimonials__title">
+            {{title}}
+        </div>
+    {{/if}}
+    {{#if items.[0]}}
+        <div class="testimonials__items">
+            {{#each items}}
+                <div class="testimonials__items__item">
+                    {{#if quoteText}}
+                        <div class="testimonials__items__item__quote-text">
+                            {{quoteText}}
+                        </div>
+                    {{/if}}
+                    {{#if personName}}
+                        <div class="testimonials__items__item__person-name">
+                            {{personName}}
+                        </div>
+                    {{/if}}
+                    {{#if jobTitle}}
+                        <div class="testimonials__items__item__job-title">
+                            {{jobTitle}}
+                        </div>
+                    {{/if}}
+                </div>
+            {{/each}}
+        </div>
+    {{/if}}
+</div>

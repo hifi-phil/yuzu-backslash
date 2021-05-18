@@ -1,0 +1,29 @@
+<div class="feature{{#each _modifiers}} feature--{{this}}{{/each}}">
+
+    {{#if title}}
+        <div class="feature__title">
+            {{title}}
+        </div>
+    {{/if}}
+    {{#if image.src}}
+        <picture class="feature__image">
+            <img src="{{image.src}}" alt="{{image.alt}}">
+        </picture>
+    {{/if}}
+    {{#if bodyCopy}}
+        <div class="feature__body-copy">
+            {{bodyCopy}}
+        </div>
+    {{/if}}
+    {{#if bullets.[0]}}
+        <div class="feature__bullets">
+            {{#each bullets}}
+                {{#if text}}
+                    <div class="feature__bullets__text">
+                        {{text}}
+                    </div>
+                {{/if}}
+            {{/each}}
+        </div>
+    {{/if}}
+</div>

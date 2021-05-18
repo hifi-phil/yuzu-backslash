@@ -1,0 +1,36 @@
+<div class="products-and-services{{#each _modifiers}} products-and-services--{{this}}{{/each}}">
+
+    {{#if title}}
+        <div class="products-and-services__title">
+            {{title}}
+        </div>
+    {{/if}}
+    {{#if items.[0]}}
+        <div class="products-and-services__items">
+            {{#each items}}
+                <div class="products-and-services__items__item">
+                    {{#if image.src}}
+                        <picture class="products-and-services__items__item__image">
+                            <img src="{{image.src}}" alt="{{image.alt}}">
+                        </picture>
+                    {{/if}}
+                    {{#if title}}
+                        <div class="products-and-services__items__item__title">
+                            {{title}}
+                        </div>
+                    {{/if}}
+                    {{#if text}}
+                        <div class="products-and-services__items__item__text">
+                            {{text}}
+                        </div>
+                    {{/if}}
+                    {{#if cta.href}}
+                        <a class="products-and-services__items__item__cta" href="{{cta.title}}" title="{{cta.title}}" {{#if cta.isNewTab}}target="_blank" {{/if}} {{#if cta.isExternalLink}}rel="noopener noreferrer" {{/if}}>
+                            {{cta.label}}
+                        </a>
+                    {{/if}}
+                </div>
+            {{/each}}
+        </div>
+    {{/if}}
+</div>

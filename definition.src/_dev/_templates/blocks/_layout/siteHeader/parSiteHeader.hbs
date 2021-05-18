@@ -1,0 +1,19 @@
+<div class="site-header{{#each _modifiers}} site-header--{{this}}{{/each}}">
+
+    {{#if menu.[0]}}
+        <div class="site-header__menu">
+            {{#each menu}}
+                {{#if this.href}}
+                    <a class="site-header__menu__item" href="{{this.title}}" title="{{this.title}}" {{#if this.isNewTab}}target="_blank" {{/if}} {{#if this.isExternalLink}}rel="noopener noreferrer" {{/if}}>
+                        {{this.label}}
+                    </a>
+                {{/if}}
+            {{/each}}
+        </div>
+    {{/if}}
+    {{#if cta.href}}
+        <a class="site-header__cta" href="{{cta.title}}" title="{{cta.title}}" {{#if cta.isNewTab}}target="_blank" {{/if}} {{#if cta.isExternalLink}}rel="noopener noreferrer" {{/if}}>
+            {{cta.label}}
+        </a>
+    {{/if}}
+</div>

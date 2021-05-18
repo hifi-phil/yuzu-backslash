@@ -3,6 +3,16 @@
     "$schema": "http://json-schema.org/draft-04/schema#",
     "description": "",
     "type": "object",
-    "properties": {},
+    "properties": {
+        "siteHeader": {
+            "$ref": "/parSiteHeader"
+        },
+        "siteFooter": {
+            "$ref": "/parSiteFooter"
+        },
+        "cookieBanner": {
+            "$ref": "/parCookieBanner"
+        }
+    },
     "additionalProperties": false
 }

@@ -1,0 +1,17 @@
+<div class="homepage{{#each _modifiers}} homepage--{{this}}{{/each}}">
+
+    {{#if heading}}
+        <div class="homepage__heading">
+            {{heading}}
+        </div>
+    {{/if}}
+    {{#if bodyCopy}}
+        <div class="homepage__body-copy">
+            {{bodyCopy}}
+        </div>
+    {{/if}}
+
+     {{#if content}}
+        {{> parRowBuilder content }}
+    {{/if}}
+</div>

@@ -1,1 +1,11 @@
-{}
+{
+    "siteHeader": {
+        "$ref": "/parSiteHeader"
+    },
+    "siteFooter": {
+        "$ref": "/parSiteFooter"
+    },
+    "cookieBanner": {
+        "$ref": "/parCookieBanner"
+    }
+}

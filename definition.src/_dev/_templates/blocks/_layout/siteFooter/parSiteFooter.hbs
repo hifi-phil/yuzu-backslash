@@ -1,0 +1,29 @@
+<div class="site-footer{{#each _modifiers}} site-footer--{{this}}{{/each}}">
+
+    {{#if logo.src}}
+        <picture class="site-footer__logo">
+            <img src="{{logo.src}}" alt="{{logo.alt}}">
+        </picture>
+    {{/if}}
+    {{#if copyright}}
+        <div class="site-footer__copyright">
+            {{copyright}}
+        </div>
+    {{/if}}
+    {{#if links.[0]}}
+        <div class="site-footer__links">
+            {{#each links}}
+                {{#if this.href}}
+                    <a class="site-footer__links__link" href="{{this.title}}" title="{{this.title}}" {{#if this.isNewTab}}target="_blank" {{/if}} {{#if this.isExternalLink}}rel="noopener noreferrer" {{/if}}>
+                        {{this.label}}
+                    </a>
+                {{/if}}
+            {{/each}}
+        </div>
+    {{/if}}
+    {{#if address}}
+        <div class="site-footer__address">
+            {{address}}
+        </div>
+    {{/if}}
+</div>
