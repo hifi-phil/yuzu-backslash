@@ -1,0 +1,8 @@
+{
+    "id": "/dataTheme",
+    "type": "string",
+    "enum": [
+        "black",
+        "white"
+    ]
+}

@@ -1,0 +1,20 @@
+////
+/// @group -Library-
+////
+
+///
+///  Allows different styles to be applied when viewed on the backend (e.g. in a page grid)
+///  
+@mixin backend-specific {
+  @if $is-backend == true {
+    // .yuzu-back-office & {
+      @content;
+    // }
+  }
+}
+
+@mixin frontend-specific {
+  @if $is-backend == false {
+    @content;
+  }
+}

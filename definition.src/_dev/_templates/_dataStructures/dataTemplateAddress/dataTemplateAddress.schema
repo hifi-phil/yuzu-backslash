@@ -1,0 +1,13 @@
+{
+    "id": "/dataTemplateAddress",
+    "type": "object",
+    "properties": {
+        "items": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        }
+    },
+    "additionalProperties": false
+}

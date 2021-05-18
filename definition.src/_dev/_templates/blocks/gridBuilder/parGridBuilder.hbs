@@ -1,0 +1,17 @@
+<div class="container">
+    {{#each rows}}
+        {{#if columns.[0]}}
+            <div class="row">
+                {{#each columns}}
+                        {{#if items.[0]}}
+                            <div class="col{{#if gridSize}}-{{enum gridSize}}{{/if}}">
+                                {{#each items}}
+                                    {{{ dynPartial _ref this }}}
+                                {{/each}}
+                            </div>
+                        {{/if}}
+                {{/each}}
+            </div>
+        {{/if}}
+    {{/each}}
+</div>
