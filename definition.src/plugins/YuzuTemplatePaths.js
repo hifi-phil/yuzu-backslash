@@ -10,7 +10,7 @@ class YuzuTemplatePaths {
         return item.includes('_templates') && path.extname(item) === '.json' 
       });
 
-      const previews = yuzu.build.getPreviews(dependencies, 'yuzu.html');
+      const previews = yuzu.build.getPreviews(dependencies);
       const output = JSON.stringify(previews, null, 4);
 
       // Insert this list into the webpack build as a new file asset:
